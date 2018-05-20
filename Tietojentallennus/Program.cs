@@ -35,6 +35,7 @@ namespace TiedonTallennus
             // tiedostoon kirjoittaminen
             File.WriteAllText(tiedostoLämpötila, lämpötila.ToString());
             Console.WriteLine("Uusi lämpötila tallennettu.");
+            Console.WriteLine("Vanha lämpötila oli " + File.ReadAllText(tiedostoVanhaLämpötila) + " astetta.");
 
             Console.ReadLine();
         }
